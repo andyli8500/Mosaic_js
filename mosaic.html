@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/mosaic.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <title>Mosaic</title>
+  </head>
+  <body>
+    
+    <!-- Drop file -->
+    <div id="dropbox">
+      <div id="options">Drop Image Here Or <input type="file" name="image" accept="image/*" style="color: transparent;" onchange="loadImg(event)"></div>
+    </div>
+    <!-- Place to display original image -->
+    <p>
+      <img id="img-orig"/>
+    </p>
+
+    <!-- Mosaic button -->
+    <p>
+      <button type="button" id="converter" onclick="doMosaic(event)">Mosaic It</button>
+    </p>
+
+    <!-- Place to display mosaic -->
+    <div id="mosaic"></div>
+
+  </body>
+</html>
